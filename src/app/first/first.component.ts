@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   //templateUrl: './first.component.html',
   template : `
     <div>
-      <input type='text'/>
+      <ng-content></ng-content>
     </div>
   `,
   styleUrls: ['./first.component.css']
