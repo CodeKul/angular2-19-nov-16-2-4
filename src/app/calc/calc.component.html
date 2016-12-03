@@ -1,0 +1,14 @@
+<div>
+  Num1 <input type="text" #num1/>
+</div>
+<div>
+  Num2 <input type="text" #num2/>
+</div>
+<div>
+  <!--<input type="button" value="Add" (click)="result = num1.value + num2.value"/>  -->
+  <input type="button" value="Add" (click)="onAddClicked(num1.value, num2.value)" />
+</div>
+
+<div>
+  {{result}}
+</div>
