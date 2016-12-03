@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   //templateUrl: './first.component.html',
   template : `
     <div>
+      <h1>First Component</h1>
       <ng-content></ng-content>
     </div>
   `,

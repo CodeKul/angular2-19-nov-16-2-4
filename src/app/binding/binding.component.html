@@ -1,0 +1,13 @@
+<div [ngStyle]="{'width':'100px','height':'100px','border':'1px solid red'}">
+  
+</div>
+
+<div [style.color]="'green'">
+  Androd
+</div>
+
+<div [ngClass]='{specialDiv : isSpecialDiv}'>
+  
+</div>
+<input type="button" value="okay" (click)="this.isSpecialDiv = !this.isSpecialDiv"/>
+<input type="text" [value]="myOs"/>

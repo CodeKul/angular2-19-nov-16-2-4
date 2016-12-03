@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { FirstComponent } from './first/first.component';
 import { CalcComponent } from './calc/calc.component';
+import { BindingComponent } from './binding/binding.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CalcComponent } from './calc/calc.component';
     LoginComponent,
     HeaderComponent,
     FirstComponent,
-    CalcComponent
+    CalcComponent,
+    BindingComponent
   ],
   imports: [
     BrowserModule,
