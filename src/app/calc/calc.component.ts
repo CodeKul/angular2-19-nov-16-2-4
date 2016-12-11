@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-calc',
+  selector: '#appcalc',
   templateUrl: './calc.component.html'
 })
 export class CalcComponent  {
