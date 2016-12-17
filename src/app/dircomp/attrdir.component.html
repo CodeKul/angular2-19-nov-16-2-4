@@ -1,0 +1,26 @@
+<h1>Attribute Directive</h1>
+<hr>
+
+<div [ngClass]="{perfectSqure : true, goodBackground : true}">
+  ngClass
+</div>
+
+<div [ngStyle]="{'border' : '1px solid red'}">
+  ngStyle
+</div>
+
+<div>
+  <input type="text" [ngStyle]="{'width' : inputSize}">
+  <input type="button" (click)="increaseSize(400)">
+</div>
+
+<h1>Custome Directive</h1>
+<hr>
+
+<div>
+  <input type="text" sizer [inputSize]="'200px'"/>
+</div>
+
+<div>
+  <input type="text" sizer [inputSize]="'600px'"/>
+</div>

@@ -17,6 +17,11 @@ import { Projmod1Component } from './projmod1/projmod1.component';
 import { HeaderComponent } from './projmod1/header.component';
 import { LeftmenuComponent } from './projmod1/leftmenu.component';
 import { MaincontentComponent } from './projmod1/maincontent.component';
+import { DircompComponent } from './dircomp/dircomp.component';
+import { AttrdirComponent } from './dircomp/attrdir.component';
+import { SizerDirective } from './dircomp/sizer.directive';
+import { StrdirComponent } from './dircomp/strdir.component';
+import { TransformerDirective } from './dircomp/transformer.directive';
 
 @NgModule({
   declarations: [
@@ -34,7 +39,12 @@ import { MaincontentComponent } from './projmod1/maincontent.component';
     Projmod1Component,
     HeaderComponent,
     LeftmenuComponent,
-    MaincontentComponent
+    MaincontentComponent,
+    DircompComponent,
+    AttrdirComponent,
+    SizerDirective,
+    StrdirComponent,
+    TransformerDirective
   ],
   imports: [
     BrowserModule,

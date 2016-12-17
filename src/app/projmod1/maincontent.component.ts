@@ -10,6 +10,7 @@ export class MaincontentComponent  {
 
   @Input() hero : Menu;
   
-  constructor() { }
+  constructor() { 
 
+  }
 }
