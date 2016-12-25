@@ -1,0 +1,12 @@
+<h1> Services First Component</h1>
+<hr>
+
+<div>
+  <ul>
+    <li *ngFor="let country of countries">{{country}}</li>
+  </ul>
+</div>
+<div>
+  <input type="text" #newCountry /><input type="button" value="New Country" (click)="addNewCountry(newCountry.value)"/>
+</div>
+

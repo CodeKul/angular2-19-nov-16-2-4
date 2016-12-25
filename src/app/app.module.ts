@@ -1,3 +1,5 @@
+import { SecondserviceService } from './servicecomp/secondservice.service';
+import { DataproviderService } from './servicecomp/dataprovider.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -23,6 +25,9 @@ import { SizerDirective } from './dircomp/sizer.directive';
 import { StrdirComponent } from './dircomp/strdir.component';
 import { TransformerDirective } from './dircomp/transformer.directive';
 import { DropdownDirective } from './projmod1/dropdown.directive';
+import { ServicecompComponent } from './servicecomp/servicecomp.component';
+import { SecondservicecompComponent } from './servicecomp/secondservicecomp.component';
+import { IndexservicecompComponent } from './servicecomp/indexservicecomp.component';
 
 @NgModule({
   declarations: [
@@ -46,14 +51,17 @@ import { DropdownDirective } from './projmod1/dropdown.directive';
     SizerDirective,
     StrdirComponent,
     TransformerDirective,
-    DropdownDirective
+    DropdownDirective,
+    ServicecompComponent,
+    SecondservicecompComponent,
+    IndexservicecompComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [DataproviderService,SecondserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

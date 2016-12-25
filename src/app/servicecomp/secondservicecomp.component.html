@@ -1,0 +1,9 @@
+<h1> Services Second Component</h1>
+<div>
+  <ul>
+    <li *ngFor="let country of countries">{{country}}</li>
+  </ul>
+</div>
+<div>
+  <input type="text" #newCountry /><input type="button" value="New Country" (click)="addNewCountry(newCountry.value)"/>
+</div>
