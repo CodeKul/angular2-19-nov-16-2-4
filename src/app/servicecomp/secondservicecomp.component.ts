@@ -1,5 +1,6 @@
+import { WormholeService } from './wormhole.service';
 import { DataproviderService } from './dataprovider.service';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-secondservicecomp',
@@ -7,17 +8,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./secondservicecomp.component.css'],
   //providers : [DataproviderService]
 })
-export class SecondservicecompComponent  {
+export class SecondservicecompComponent implements OnInit{
 
-  private data  :DataproviderService;
-  private countries : string [];
+  private wormHole: WormholeService;
 
-  constructor(data : DataproviderService) { 
+  private data: DataproviderService;
+  private countries: string[];
+  private backColor : string;
+
+  constructor(data: DataproviderService, wormHole: WormholeService) {
     this.data = data;
+    this.wormHole = wormHole;
     this.countries = data.getCountries();
   }
 
-   public  addNewCountry(newCountry  : string){
+  public addNewCountry(newCountry: string) {
     this.data.addCountry(newCountry);
+  }
+
+  ngOnInit(){
+    this.wormHole.getBridge().subscribe(data => this.backColor = data );
   }
 }

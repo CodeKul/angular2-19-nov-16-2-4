@@ -7,6 +7,11 @@
   </ul>
 </div>
 <div>
-  <input type="text" #newCountry /><input type="button" value="New Country" (click)="addNewCountry(newCountry.value)"/>
+  <input type="text" #newCountry /><input type="button" value="New Country" (click)="addNewCountry(newCountry.value)" />
 </div>
 
+<div>
+  <input type="button" value="Red" (click)="travelToOtherWorld('red')"/>
+  <input type="button" value="Green" (click)="travelToOtherWorld('green')"/>
+  <input type="button" value="Blue" (click)="travelToOtherWorld('blue')"/>
+</div>

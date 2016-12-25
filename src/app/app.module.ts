@@ -1,3 +1,4 @@
+import { WormholeService } from './servicecomp/wormhole.service';
 import { SecondserviceService } from './servicecomp/secondservice.service';
 import { DataproviderService } from './servicecomp/dataprovider.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -61,7 +62,7 @@ import { IndexservicecompComponent } from './servicecomp/indexservicecomp.compon
     FormsModule,
     HttpModule
   ],
-  providers: [DataproviderService,SecondserviceService],
+  providers: [DataproviderService,SecondserviceService,WormholeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
