@@ -22,6 +22,7 @@ import { AttrdirComponent } from './dircomp/attrdir.component';
 import { SizerDirective } from './dircomp/sizer.directive';
 import { StrdirComponent } from './dircomp/strdir.component';
 import { TransformerDirective } from './dircomp/transformer.directive';
+import { DropdownDirective } from './projmod1/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { TransformerDirective } from './dircomp/transformer.directive';
     AttrdirComponent,
     SizerDirective,
     StrdirComponent,
-    TransformerDirective
+    TransformerDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
