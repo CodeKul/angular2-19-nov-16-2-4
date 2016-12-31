@@ -27,6 +27,7 @@ export class SecondservicecompComponent implements OnInit{
   }
 
   ngOnInit(){
-    this.wormHole.getBridge().subscribe(data => this.backColor = data );
+    //this.wormHole.getBridge().subscribe(data => this.backColor = data );
+    this.wormHole.subscribeForTravellers(traveler => this.backColor = traveler)
   }
 }

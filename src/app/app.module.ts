@@ -1,3 +1,4 @@
+import { MyRouter } from './app.routing';
 import { WormholeService } from './servicecomp/wormhole.service';
 import { SecondserviceService } from './servicecomp/secondservice.service';
 import { DataproviderService } from './servicecomp/dataprovider.service';
@@ -29,6 +30,10 @@ import { DropdownDirective } from './projmod1/dropdown.directive';
 import { ServicecompComponent } from './servicecomp/servicecomp.component';
 import { SecondservicecompComponent } from './servicecomp/secondservicecomp.component';
 import { IndexservicecompComponent } from './servicecomp/indexservicecomp.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { RoutingComponent } from './routing/routing.component';
+import { LoginroutComponent } from './routing/loginrout.component';
+import { RegistrationComponent } from './routing/registration.component';
 
 @NgModule({
   declarations: [
@@ -55,12 +60,17 @@ import { IndexservicecompComponent } from './servicecomp/indexservicecomp.compon
     DropdownDirective,
     ServicecompComponent,
     SecondservicecompComponent,
-    IndexservicecompComponent
+    IndexservicecompComponent,
+    LifecycleComponent,
+    RoutingComponent,
+    LoginroutComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MyRouter
   ],
   providers: [DataproviderService,SecondserviceService,WormholeService],
   bootstrap: [AppComponent]

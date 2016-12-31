@@ -13,7 +13,11 @@ export class WormholeService {
     this.bridge.emit(data);
   }
 
-  public getBridge() : EventEmitter<String> {
-    return this.bridge;    
+  // public getBridge() : EventEmitter<String> {
+  //   return this.bridge;    
+  // }
+
+  public subscribeForTravellers(callback : any){
+    this.bridge.subscribe(callback);
   }
 }
