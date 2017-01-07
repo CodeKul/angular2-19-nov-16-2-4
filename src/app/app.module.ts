@@ -34,6 +34,10 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { RoutingComponent } from './routing/routing.component';
 import { LoginroutComponent } from './routing/loginrout.component';
 import { RegistrationComponent } from './routing/registration.component';
+import { RoutingTwoComponent } from './routing-two/routing-two.component';
+import { LoginAgainComponent } from './routing-two/login-again.component';
+import { RegiAgainComponent } from './routing-two/regi-again.component';
+import { NewPageComponent } from './routing-two/new-page.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +68,11 @@ import { RegistrationComponent } from './routing/registration.component';
     LifecycleComponent,
     RoutingComponent,
     LoginroutComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    RoutingTwoComponent,
+    LoginAgainComponent,
+    RegiAgainComponent,
+    NewPageComponent
   ],
   imports: [
     BrowserModule,

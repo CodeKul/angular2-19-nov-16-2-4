@@ -1,0 +1,25 @@
+<div class="container">
+ 
+
+    <h2>{{userName}}</h2>
+    
+    <div class="form-group">
+      <label for="email" class="col-sm-3 control-label">Email</label>
+      <div class="col-sm-9">
+        <input [(ngModel)]="myName" type="email" id="email" placeholder="Email" class="form-control">
+      </div>
+    </div>
+
+    <!-- /.form-group -->
+    <div class="form-group">
+      <div class="col-sm-9 col-sm-offset-3">
+        <a [routerLink]="['/new',myName]" [queryParams]="{first:'android', ver: '7.0'}"> New Page </a>
+      </div>
+    </div>
+
+  <!-- /form -->
+</div>
+
+
+<!-- ./container -->
+
