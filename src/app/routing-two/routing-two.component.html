@@ -2,12 +2,12 @@
 <router-outlet></router-outlet>
 
 <div>
-    <a routerLink="">Login</a>
+    <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">Login</a>
 </div>
 <div>
-    <a routerLink="register">Registration</a>
+    <a routerLink="register" routerLinkActive="active">Registration</a>
 </div>
 
 <div>
-    <a [routerLink]="['new','android']">New Page</a>
+    <a [routerLink]="['new','android']" routerLinkActive="active">New Page</a>
 </div>

@@ -1,3 +1,4 @@
+import { OkayGuardService } from './routing-two/okay-guard.service';
 import { MyRouter } from './app.routing';
 import { WormholeService } from './servicecomp/wormhole.service';
 import { SecondserviceService } from './servicecomp/secondservice.service';
@@ -38,6 +39,8 @@ import { RoutingTwoComponent } from './routing-two/routing-two.component';
 import { LoginAgainComponent } from './routing-two/login-again.component';
 import { RegiAgainComponent } from './routing-two/regi-again.component';
 import { NewPageComponent } from './routing-two/new-page.component';
+import { SimpleComponent } from './routing-two/simple.component';
+import { ComplexComponent } from './routing-two/complex.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +75,9 @@ import { NewPageComponent } from './routing-two/new-page.component';
     RoutingTwoComponent,
     LoginAgainComponent,
     RegiAgainComponent,
-    NewPageComponent
+    NewPageComponent,
+    SimpleComponent,
+    ComplexComponent
   ],
   imports: [
     BrowserModule,
@@ -80,7 +85,7 @@ import { NewPageComponent } from './routing-two/new-page.component';
     HttpModule,
     MyRouter
   ],
-  providers: [DataproviderService,SecondserviceService,WormholeService],
+  providers: [DataproviderService,SecondserviceService,WormholeService,OkayGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

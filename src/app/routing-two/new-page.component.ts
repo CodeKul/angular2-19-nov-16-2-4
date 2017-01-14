@@ -15,7 +15,7 @@ export class NewPageComponent implements OnInit, OnDestroy {
 
   constructor(private router : Router, private activatedRoute: ActivatedRoute) {
     //this.userName = activatedRoute.snapshot.params['userName'];
-    //this.sub = this.activatedRoute.params.subscribe( params => this.userName = params['userName']);
+    this.sub = this.activatedRoute.params.subscribe( params => this.userName = params['userName']);
     this.subQuery = this.router.routerState.root.queryParams.subscribe(params => this.userName = params['ver']);
   }
 
