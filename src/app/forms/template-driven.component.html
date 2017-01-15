@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="row">
+    <h2>This is template driven approach</h2>
+
+    <form class="form-horizontal" #form="ngForm" (ngSubmit)="onFormSubmit(form)">
+      <fieldset>
+
+        <!-- Form Name -->
+        <legend>Register Here</legend>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">First Name</label>
+          <div class="col-md-4">
+            <input #firstName="ngModel" id="textinput" name="firstName" placeholder="Insert your First Name" class="form-control input-md"
+              type="text" [(ngModel)]="user.firstName" required>
+
+            <span class="help-block"> </span>
+          </div>
+        </div>
+
+        <div ngModelGroup="grp">
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Mobile</label>
+            <div class="col-md-4">
+              <input #mobile="ngModel" id="textinput" name="mobile" placeholder="Insert your Mobile" class="form-control input-md" type="text"
+                [(ngModel)]="user.mobile" required />
+              <span class="help-block"></span>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Email</label>
+            <div class="col-md-4">
+              <input #email="ngModel" id="textinput" name="email" placeholder="Insert your Email" class="form-control input-md" type="text"
+                [(ngModel)]="user.email" required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+              <span class="help-block" *ngIf="!email['valid']">Invalid Email</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="singlebutton"> </label>
+          <div class="col-md-4">
+            <button id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit" [disabled]="!form['valid']">Submit</button>
+          </div>
+        </div>
+
+      </fieldset>
+    </form>
+
+  </div>
+</div>

@@ -1,3 +1,5 @@
+import { DataDrivenComponent } from './forms/data-driven.component';
+import { TemplateDrivenComponent } from './forms/template-driven.component';
 import { OkayGuardService } from './routing-two/okay-guard.service';
 import { ComplexComponent } from './routing-two/complex.component';
 import { SimpleComponent } from './routing-two/simple.component';
@@ -19,6 +21,8 @@ const CHILD_ROUTE  :Routes  =[
 const ROUTES : Routes = [
     {path :'', component :LoginAgainComponent},
     {path :'register', component :RegiAgainComponent},
+    {path:'templateDriven', component : TemplateDrivenComponent},
+    {path:'dataDriven', component : DataDrivenComponent},
     {path :'new/:userName', component : NewPageComponent, canActivate :[OkayGuardService]},
     {path: 'new/:userName', component: NewPageComponent, children : CHILD_ROUTE},
     {path: 'new', redirectTo:'/new/android'},

@@ -41,6 +41,9 @@ import { RegiAgainComponent } from './routing-two/regi-again.component';
 import { NewPageComponent } from './routing-two/new-page.component';
 import { SimpleComponent } from './routing-two/simple.component';
 import { ComplexComponent } from './routing-two/complex.component';
+import { FormsComponent } from './forms/forms.component';
+import { TemplateDrivenComponent } from './forms/template-driven.component';
+import { DataDrivenComponent } from './forms/data-driven.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +80,10 @@ import { ComplexComponent } from './routing-two/complex.component';
     RegiAgainComponent,
     NewPageComponent,
     SimpleComponent,
-    ComplexComponent
+    ComplexComponent,
+    FormsComponent,
+    TemplateDrivenComponent,
+    DataDrivenComponent
   ],
   imports: [
     BrowserModule,
